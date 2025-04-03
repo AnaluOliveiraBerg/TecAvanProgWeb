@@ -69,3 +69,37 @@ function ex10() {
         document.getElementById("total").innerHTML = "";
     }	
 }
+
+function ex11(){
+    let codigo = Number(document.getElementById("cdgOrigem").value);
+    let qtde = Number(document.getElementById("qtde").value);
+    let preco = Number(document.getElementById("preco").value);
+    let subtotal = preco*qtde;
+    if (codigo == 1){
+        document.getElementById("qtde").innerHTML = "A quantidade de produtos é: " + qtde;
+        document.getElementById("preco").innerHTML = "O preço de produtos é: " + preco;
+        document.getElementById("subtotal").innerHTML = "O subTotal é: " + subtotal;
+        document.getElementById("total").innerHTML = "O total é: " + (subtotal+10);
+    } else if ( codigo == 2){
+        document.getElementById("qtde").innerHTML = "A quantidade de produtos é: " + qtde;
+        document.getElementById("preco").innerHTML = "O preço de produtos é: " + preco;
+        document.getElementById("subtotal").innerHTML = "O subTotal é: " + subtotal;
+        document.getElementById("total").innerHTML = "O total é: " + (subtotal+50);
+    } else if (codigo == 3 | 5){
+        document.getElementById("qtde").innerHTML = "A quantidade de produtos é: " + qtde;
+        document.getElementById("preco").innerHTML = "O preço de produtos é: " + preco;
+        document.getElementById("subtotal").innerHTML = "O subTotal é: " + subtotal;
+        document.getElementById("total").innerHTML = "O total é: " + (subtotal+30);
+    } else if (codigo >=6 && codigo<=9){
+        document.getElementById("qtde").innerHTML = "A quantidade de produtos é: " + qtde;
+        document.getElementById("preco").innerHTML = "O preço de produtos é: " + preco;
+        document.getElementById("subtotal").innerHTML = "O subTotal é: " +subtotal;
+        document.getElementById("total").innerHTML = "O total é: " + (subtotal+40);
+    } else if ((codigo >=10 && codigo <=15) | (codigo >=25 && codigo <=30)){
+        document.getElementById("qtde").innerHTML = "A quantidade de produtos é: " + qtde;
+        document.getElementById("preco").innerHTML = "O preço de produtos é: " + preco;
+        document.getElementById("subtotal").innerHTML = "O subTotal é: " +subtotal;
+        document.getElementById("total").innerHTML = "O total é: " + (subtotal+85);
+    }
+
+}

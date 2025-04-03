@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código</title>
+</head>
+<body>
+    <h1>Exercício 11 - Calculo de frete</h1>
+    <form>
+        <p>
+            Digite o preço do produto:<br>
+            <input type="text" id="preco">
+        </p>
+        <p>
+            Digite a quantidade de produtos:<br>
+            <input type="text" id="qtde">
+        </p>
+        <p>
+            Digite o código de origem para o frete:<br>
+            1 = Sul <br>
+            2 = Norte <br>
+            3 ou 5 = Nordeste <br>
+            6 a 9 = Sudeste <br>
+            10 a 15 ou 25 a 30 = Centro Oeste <br>
+            <input type="text" id="cdgOrigem">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="ex11()">
+        </p>
+    </form>
+
+    <p id="qtde"></p>
+    <p id="preco"></p>
+    <p id="subtotal"></p>
+    <p id="frete"></p>
+    <p id="total"></p>
+
+    <script src="exercicios.js"></script>
+</body>
+</html>
